@@ -18,6 +18,9 @@ else
     pr = serialport(prPort,9600); 
     if isa(pr,'internal.Serialport')
         disp('Connected')
+        %!%HY debug
+        disp(pr)
+        %!%
     else
         disp('Failed to open the port.');
     end
